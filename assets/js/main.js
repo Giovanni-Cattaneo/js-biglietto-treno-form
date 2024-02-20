@@ -15,6 +15,6 @@ function myFunction(){
 }
 
 if (console.log(Number(userAge.value)) < 18){
-    document.getElementById(price).innerHTMl("ciaone") 
+    document.getElementById("price").innerHTMl("ciaone") 
 }
 
