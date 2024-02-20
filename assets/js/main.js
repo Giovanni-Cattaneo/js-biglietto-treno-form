@@ -11,7 +11,8 @@ const button = document.getElementById("btn");
 button.addEventListener("click", myFunction)
 
 function myFunction(){
-    console.log(Number(userAge.value), Number(userDistance.value));
+    console.log (Number(userAge.value)) ;
+    console.log (Number(userDistance.value));
 }
 
 if ( userAge.value < 18){
