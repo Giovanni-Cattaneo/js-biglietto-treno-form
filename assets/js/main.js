@@ -12,7 +12,7 @@ function myFunction(){
     console.log (Number(inputAge.value)) ; // valore età
     console.log (Number(inputDistance.value)); // valore distanza
     let userAge = Number(inputAge.value) ;
-    let userDistance = Number(inputAge.value) ;
+    let userDistance = Number(inputDistance.value) ;
     let tripPrice = userDistance * 0.21;
 
     if (userAge < 18) {
