@@ -29,7 +29,7 @@ function myFunction(){
 
     tripPrice = tripPrice.toFixed(2);
 
-    console.log(identity.value, tripPrice);
+    console.log(inputIdentity.value, tripPrice);
 
     document.getElementById("price").innerHTML = tripPrice;
 }
