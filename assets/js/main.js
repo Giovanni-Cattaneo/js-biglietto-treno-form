@@ -22,6 +22,8 @@ function myFunction(){
     }
 
     tripPrice = tripPrice.toFixed(2);
-    
+
     console.log(tripPrice);
+
+    document.getElementById("price").innerHTML = tripPrice;
 }
