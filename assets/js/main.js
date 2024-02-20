@@ -14,3 +14,7 @@ function myFunction(){
     console.log(Number(userAge.value), Number(userDistance.value));
 }
 
+if (console.log(Number(userAge.value)) < 18){
+    document.getElementById(price).innerHTMl("ciaone") 
+}
+
