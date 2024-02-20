@@ -1,23 +1,27 @@
 console.log("hello");
 
-const userAge = document.getElementById("age");
+const inputAge = document.getElementById("age"); // input età
 
-const userDistance = document.getElementById("distance");
-
-console.log (Number(userAge), Number(userDistance));
+const inputDistance = document.getElementById("distance"); // input distanza
 
 const button = document.getElementById("btn");
 
 button.addEventListener("click", myFunction)
 
 function myFunction(){
-    console.log (Number(userAge.value)) ;
-    console.log (Number(userDistance.value));
+    console.log (Number(inputAge.value)) ; // valore età
+    console.log (Number(inputDistance.value)); // valore distanza
+    let userAge = Number(inputAge.value) ;
+    let userDistance = Number(inputAge.value) ;
+    let tripPrice = userDistance * 0.21;
+
+    if (userAge < 18) {
+        tripPrice *= 0.8
+    } else if (userAge > 65){
+        tripPrice *= 0.6
+    }
+
+    tripPrice = tripPrice.toFixed(2);
+    
+    console.log(tripPrice);
 }
-
-if ( userAge.value < 18){
-    console.log("hello"); 
-}
- 
-
-
