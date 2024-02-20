@@ -10,6 +10,8 @@ const button = document.getElementById("btn");
 
 button.addEventListener("click", myFunction)
 
+let kmPrice = 0.21
+
 let juniorDiscount = 0.8
 
 let seniorDiscount = 0.6
@@ -19,7 +21,7 @@ function myFunction(){
     console.log (Number(inputDistance.value)); // valore distanza
     let userAge = Number(inputAge.value) ;
     let userDistance = Number(inputDistance.value) ;
-    let tripPrice = userDistance * 0.21;
+    let tripPrice = userDistance * kmPrice;
 
     if (userAge < 18) {
         tripPrice *= juniorDiscount
