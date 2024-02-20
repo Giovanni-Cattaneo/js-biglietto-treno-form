@@ -1,11 +1,13 @@
 console.log("hello");
 
-const userAge = document.getElementById("age");
-const userDistance = document.getElementById("distance");
+const userAge = document.getElementById(Number("age"));
 
-console.log(userAge);
-console.log(userDistance);
+const userDistance = document.getElementById(Number("distance"));
 
 const button = document.getElementById("btn");
 
-console.log(button);
+button.addEventListener("click", myFunction)
+
+function myFunction(){
+    console.log(userAge, userDistance);
+}
