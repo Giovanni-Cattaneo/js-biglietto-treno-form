@@ -33,14 +33,14 @@ function myFunction(){
 
     console.log(inputIdentity.value, tripPrice);
 
-    document.getElementById("price").innerHTML = tripPrice;
+    document.getElementById("price").innerHTML = tripPrice +"€";
     const cpCode = Math.floor((Math.random() * 10000) +1000);
     const wagon = Math.floor((Math.random() * 10) +1);
 
 
     const markup = `
     <div>${inputIdentity.value}</div>
-    <div>Prezzo standard ${userDistance * kmPrice}</div>
+    <div>Prezzo standard ${userDistance * kmPrice}€</div>
     <div>Classe di sconto ${inputAge.value}</div>
     <div>Biglietto n.${cpCode}</div>
     <div>Carrozza n.${wagon}</div>
