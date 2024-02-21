@@ -11,15 +11,18 @@
 <body>
 
     <main>
+        <form action="">
+            <input id="identity" type="text" placeholder="Inserisci Nome e cognome">
+            <select name="age" id="age">
+                <option value="regular">Regular</option>
+                <option value="minors">Under 18</option>
+                <option value="seniors">Over 65</option>
+            </select>
+            <input id="distance" type="number" placeholder="Insierisci i kilometri da percorrere">
+        </form>
         <h1>Calcola con noi il prezzo del tuo biglieto</h1>
-        <input id="identity" type="text" placeholder="Inserisci Nome e cognome">
-        <select name="age" id="age">
-            <option value="regular">Regular</option>
-            <option value="minors">Under 18</option>
-            <option value="seniors">Over 65</option>
-        </select>
-        <input id="distance" type="number" placeholder="Insierisci i kilometri da percorrere">
-        <button id="btn">Verifica</button>
+
+        <button id="btn" type="submit">Verifica</button>
         <div id="price"></div>
 
     </main>
