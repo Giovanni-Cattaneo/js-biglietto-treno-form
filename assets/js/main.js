@@ -17,15 +17,15 @@ let juniorDiscount = 0.8
 let seniorDiscount = 0.6
 
 function myFunction(){
-    console.log (Number(inputAge.value)) ; // valore età
-    console.log (Number(inputDistance.value)); // valore distanza
-    let userAge = Number(inputAge.value) ;
-    let userDistance = Number(inputDistance.value) ;
+    console.log (inputAge.value) ; // valore età
+    console.log (inputDistance.value); // valore distanza
+    let userAge = (inputAge.value) ;
+    let userDistance = (inputDistance.value) ;
     let tripPrice = userDistance * kmPrice;
 
-    if (userAge < 18) {
+    if (userAge === "minors") {
         tripPrice *= juniorDiscount
-    } else if (userAge > 65){
+    } else if (userAge === "seniors"){
         tripPrice *= seniorDiscount
     }
 
