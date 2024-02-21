@@ -40,7 +40,7 @@ function myFunction(){
 
     const markup = `
     <div>${inputIdentity.value}</div>
-    <div>Prezzo standard ${userDistance * kmPrice}€</div>
+    <div>Prezzo standard ${(userDistance * kmPrice).toFixed(2)}€</div>
     <div>Classe di sconto ${inputAge.value}</div>
     <div>Biglietto n.${cpCode}</div>
     <div>Carrozza n.${wagon}</div>
