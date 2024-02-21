@@ -5,7 +5,7 @@
 }
 
 body{
-    background-color: lightcoral;
+    background-color: green;
 }
 
 #price {
@@ -27,6 +27,10 @@ main {
     background-color: white;
 }
 
-h1{
-    padding-bottom: 2rem;
+h1, h2{
+    padding-bottom: 0.5rem;
+}
+
+#btn{
+    margin-top: 1rem;
 }
