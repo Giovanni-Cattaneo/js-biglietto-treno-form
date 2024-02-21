@@ -34,6 +34,7 @@ function myFunction(){
     console.log(inputIdentity.value, tripPrice);
 
     document.getElementById("price").innerHTML = tripPrice;
+    const wagon = Math.floor((Math.random() * 10) +1);
 
 
     const markup = `
@@ -41,7 +42,7 @@ function myFunction(){
     <div>Prezzo standard ${userDistance * kmPrice}</div>
     <div>Classe di sconto ${inputAge.value}</div>
     <div>Codice biglietto</div>
-    <div>Carrozza</div>
+    <div>Carrozza n.${wagon}</div>
 `
 
 document.querySelector(".ticket").innerHTML = markup
@@ -49,4 +50,4 @@ document.querySelector(".ticket").innerHTML = markup
 
 
 //     const cpCode = math.floor((math.random) * 90000) +5000;
-// const wagon = 
+// const wagon = math.floor((math.random() * 10) +1)
