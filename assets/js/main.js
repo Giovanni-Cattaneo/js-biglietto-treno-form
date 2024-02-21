@@ -35,7 +35,7 @@ function myFunction(){
 
     document.getElementById("price").innerHTML = tripPrice +"€";
     const cpCode = Math.floor((Math.random() * 10000) +1000);
-    const wagon = Math.floor((Math.random() * 10) +1);
+    const wagon = Math.floor((Math.random() * 20) +1);
 
 
     const markup = `
